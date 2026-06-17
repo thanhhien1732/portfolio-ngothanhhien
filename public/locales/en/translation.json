@@ -1,0 +1,20 @@
+{
+    "appHeader": {
+        "brand": "Thanh Hien",
+        "home": "Home",
+        "project": "Project",
+        "experience": "Experience",
+        "contact": "Contact",
+        "about": "About"
+    },
+    "heroSection": {
+        "exp": "About Me",
+        "cv": "Get My CV"
+    },
+    "experience": {
+        "title": "Experiences"
+    },
+    "skill": {
+        "title": "Skills"
+    }
+}

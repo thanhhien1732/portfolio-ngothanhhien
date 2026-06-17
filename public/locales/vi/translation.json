@@ -1,0 +1,20 @@
+{
+    "appHeader": {
+        "brand": "Thanh Hiền",
+        "home": "Trang chủ",
+        "project": "Dự án",
+        "experience": "Kinh nghiệm",
+        "contact": "Liên hệ",
+        "about": "Về tác giả"
+    },
+    "heroSection": {
+        "exp": "Kinh nghiệm",
+        "cv": "Tải CV"
+    },
+    "experience": {
+        "title": "Kinh nghiệm làm việc"
+    },
+    "skill": {
+        "title": "Kỹ năng"
+    }
+}
