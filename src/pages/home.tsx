@@ -4,12 +4,12 @@ import HeroRight from "components/sections/hero/hero.right";
 import { MdFileDownload } from "react-icons/md";
 import bg from 'assets/section.svg';
 import ResizeButton from "components/sections/resize.button";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants";
 
 const HomePage = () => {
-    const { t } = useTranslation();
+    // const { t } = useTranslation();
 
     // Hàm xử lý mở CV dành riêng cho nút "Get My CV" ở chế độ mobile
     const urlCV = "https://drive.google.com/file/d/1JWlMou9Wu1w_NWW_daDTYqSw-Z8yDa5n/view?usp=sharing";
@@ -59,7 +59,8 @@ const HomePage = () => {
                         {/* Nút "Get My CV" chỉ hiển thị trên mobile */}
                         <Col xs={12} className="d-md-none d-flex mt-4 justify-content-center">
                             <ResizeButton
-                                btnText={t("heroSection.cv")}
+                                // btnText={t("heroSection.cv")}
+                                btnText="Get My CV"
                                 btnIcons={<MdFileDownload />}
                                 onClick={handleDownloadCV}
                             />

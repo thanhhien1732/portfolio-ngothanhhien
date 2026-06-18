@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect";
 import SocialMedia from "components/sections/social.media";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import './hero.scss';
 import ResizeButton from "components/sections/resize.button";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,7 @@ import { APP_DATA } from '@/helpers/data';
 import { MdFileDownload } from "react-icons/md";
 
 const HeroLeft = () => {
-    const { t } = useTranslation();
+    // const { t } = useTranslation();
     const urlCV = "https://drive.google.com/file/d/1JWlMou9Wu1w_NWW_daDTYqSw-Z8yDa5n/view?usp=sharing";
 
     const handleDownloadCV = () => {
@@ -28,7 +28,8 @@ const HeroLeft = () => {
             </h3>
             <h3 style={{ paddingTop: 10, paddingBottom: 5 }}>
                 I'm &nbsp;
-                <strong className="brand-blue">{t("appHeader.brand")}</strong>
+                {/* <strong className="brand-blue">{t("appHeader.brand")}</strong> */}
+                <strong className="brand-blue">Thanh Hien</strong>
             </h3>
             <Typewriter
                 options={{
@@ -52,7 +53,8 @@ const HeroLeft = () => {
             </div>
             <div className="d-md-flex d-none gap-4">
                 <ResizeButton
-                    btnText={t("heroSection.exp")}
+                    // btnText={t("heroSection.exp")}
+                    btnText="About Me"
                     btnStyle={{
                         background: "unset",
                         border: "1px solid var(--border-hero-right)",
@@ -62,7 +64,8 @@ const HeroLeft = () => {
                 />
 
                 <ResizeButton
-                    btnText={t("heroSection.cv")}
+                    // btnText={t("heroSection.cv")}
+                    btnText="Get My CV"
                     btnIcons={<MdFileDownload />}
                     onClick={handleDownloadCV}
                 />

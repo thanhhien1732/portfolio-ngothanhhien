@@ -6,13 +6,13 @@ import GlowCard from "components/share/glow-card";
 import { BsPersonWorkspace } from "react-icons/bs";
 import blurImg from 'assets/blur-23.svg'
 import { useCurrentApp } from "components/context/app.context";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { fadeIn } from "variants";
 
 const Experience = () => {
     const { theme } = useCurrentApp();
-    const { t } = useTranslation();
+    // const { t } = useTranslation();
 
     return (
         <Row>
@@ -25,7 +25,8 @@ const Experience = () => {
             >
                 <div className="text-center">
                     <h1 style={{ fontWeight: "700" }}>
-                        {t("experience.title")}
+                        {/* {t("experience.title")} */}
+                        Experience
                     </h1>
                 </div>
             </motion.div>
