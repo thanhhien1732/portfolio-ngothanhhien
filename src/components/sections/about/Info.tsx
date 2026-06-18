@@ -173,7 +173,7 @@ const aboutData = [
                         <p className="mb-0">
                             <span className="fw-bold fs-5">University Scholarship</span>
                         </p>
-                        <ul>
+                        <ul style={{ listStylePosition: "inside" }}>
                             <li>Academic Year 2023 - 2024</li>
                             <li>Academic Year 2022 - 2023</li>
                             <li>Academic Year 2021 - 2022</li>
@@ -186,7 +186,7 @@ const aboutData = [
                 title: (
                     <>
                         <p className="mb-0 fw-bold fs-5">“Bring Van Lang Everywhere” Campaign 2025</p>
-                        <ul>
+                        <ul style={{ listStylePosition: "inside" }}>
                             <li>
                                 <span>Most Outstanding School Leader</span>
                                 <span> - </span>
