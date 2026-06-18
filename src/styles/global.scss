@@ -74,6 +74,14 @@ body {
     color: var(--text-white);
 }
 
+.navbar-brand {
+
+    &:hover,
+    &:focus {
+        color: var(--brand-name-100) !important;
+    }
+}
+
 .resize-button {
     display: flex;
     align-items: center;

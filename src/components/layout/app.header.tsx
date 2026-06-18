@@ -8,7 +8,7 @@ const AppHeader = () => {
             <Container className="d-flex justify-content-between align-items-center">
                 {/* Bên trái: Logo/Brand */}
                 <Navbar.Brand as={Link} to="/" className="brand-green m-0">
-                    Thanh Hien
+                    <span className="fw-bold">Thanh </span>Hien.
                 </Navbar.Brand>
 
                 {/* Chính giữa: Thanh Navigation (sẽ ẩn trên Mobile bằng CSS tự động) */}

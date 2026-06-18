@@ -29,7 +29,7 @@ const HeroLeft = () => {
             <h3 style={{ paddingTop: 10, paddingBottom: 5 }}>
                 I'm &nbsp;
                 {/* <strong className="brand-blue">{t("appHeader.brand")}</strong> */}
-                <strong className="brand-blue">Thanh Hien</strong>
+                <strong className="brand-blue">Ngo Thanh Hien</strong>
             </h3>
             <Typewriter
                 options={{
