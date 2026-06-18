@@ -26,7 +26,7 @@ const Experience = () => {
                 <div className="text-center">
                     <h1 style={{ fontWeight: "700" }}>
                         {/* {t("experience.title")} */}
-                        Experience
+                        Experiences
                     </h1>
                 </div>
             </motion.div>

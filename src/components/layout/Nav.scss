@@ -3,17 +3,18 @@ $nav-blur: blur(8px);
 $icon-color: white;
 $icon-active-color: #4762f8;
 
-.custom-nav-container {
+// --- MOBILE (Mặc định: Cố định dưới đáy) ---
+.header-nav-container {
     position: fixed;
-    z-index: 50;
     bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%); // Căn chính giữa trục ngang
+    z-index: 50;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
-    /* Khung chứa các Icon (Hiệu ứng kính mờ - Glassmorphism) */
-    .custom-nav-inner {
+    .header-nav-inner {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -24,37 +25,46 @@ $icon-active-color: #4762f8;
         background: $nav-bg;
         backdrop-filter: $nav-blur;
         -webkit-backdrop-filter: $nav-blur;
-        font-size: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0 10px;
 
-        /* Định dạng Icon */
         .nav-link-icon {
             color: $icon-color;
-            transition: color 0.3s ease;
-            text-decoration: none;
+            font-size: 1.5rem; // Icon to hơn cho dễ bấm trên mobile
             padding: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
 
-            /* Màu khi Hover hoặc Đang ở trang hiện tại */
             &:hover,
             &.active {
                 color: $icon-active-color;
             }
         }
     }
+}
 
-    /* --- Responsive cho Desktop (Từ 1200px trở lên) --- */
-    @media (min-width: 1200px) {
-        bottom: auto;
-        top: 0;
-        right: 2%;
-        width: 4rem;
-        height: 100vh;
-        justify-content: center;
+// --- DESKTOP (Từ 992px trở lên: Nằm lọt trong Header) ---
+@media (min-width: 992px) {
+    .header-nav-container {
+        position: static; // Loại bỏ fixed
+        transform: none;
+        width: auto;
 
-        .custom-nav-inner {
-            flex-direction: column;
-            height: 340px;
-            max-width: 100%;
-            font-size: 1.25rem;
+        .header-nav-inner {
+            height: auto;
+            max-width: none;
+            gap: 5px;
+            padding: 5px 15px;
+
+            .nav-link-icon {
+                font-size: 1.2rem; // Icon gọn lại
+                padding: 8px 16px;
+
+                &:hover,
+                &.active {
+                    transform: translateY(-2px); // Nhấc nhẹ lên khi di chuột
+                }
+            }
         }
     }
 }

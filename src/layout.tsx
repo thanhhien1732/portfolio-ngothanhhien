@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom"
 import { useEffect } from "react";
 import AppHeader from "./components/layout/app.header"
-import Nav from "./components/layout/Nav"
+// import Nav from "./components/layout/Nav"
 
 function Layout() {
   const location = useLocation();
@@ -14,7 +14,7 @@ function Layout() {
   return (
     <div>
       <AppHeader />
-      <Nav />
+      {/* <Nav /> */}
       <main className="main-content">
         <Outlet />
       </main>

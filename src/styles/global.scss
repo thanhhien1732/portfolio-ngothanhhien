@@ -19,6 +19,17 @@ $spacers: (
     padding: 0;
 }
 
+html {
+    /* Giữ trước một khoảng không gian cho thanh cuộn, 
+       giúp giao diện không bị giật ngang khi thanh cuộn xuất hiện */
+    scrollbar-gutter: stable;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--background-body);
+}
+
 .brand-green {
     color: var(--brand-name-100);
 }
@@ -29,10 +40,6 @@ $spacers: (
 
 .brand-blue {
     color: rgba(var(--bs-link-color-rgb), 1);
-}
-
-body {
-    background-color: var(--background-body);
 }
 
 .bg-body-tertiary {

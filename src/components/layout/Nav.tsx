@@ -16,30 +16,30 @@ function Nav() {
     const pathname = location.pathname;
 
     return (
-        <nav className="custom-nav-container">
-            <div className="custom-nav-inner">
+        <div className="header-nav-container">
+            <div className="header-nav-inner">
                 {navData.map((link, index) => {
                     const isActive = link.path === pathname;
-
                     return (
                         <div key={index} className="d-flex">
-                            {/* Hiển thị trên Desktop (Có Tooltip) */}
+                            {/* Desktop (Từ lg trở lên): Có Tooltip hiển thị bên dưới */}
                             <OverlayTrigger
-                                placement="left"
+                                placement="bottom"
+                                delay={{ show: 200, hide: 50 }}
                                 overlay={<Tooltip id={`tooltip-${index}`}>{link.name}</Tooltip>}
                             >
                                 <Link
                                     to={link.path}
-                                    className={`nav-link-icon d-none d-xl-flex ${isActive ? "active" : ""}`}
+                                    className={`nav-link-icon d-none d-lg-flex ${isActive ? "active" : ""}`}
                                 >
                                     {link.icon}
                                 </Link>
                             </OverlayTrigger>
 
-                            {/* Hiển thị trên Mobile (Không Tooltip) */}
+                            {/* Mobile (Dưới lg): Bỏ Tooltip để tránh lỗi chạm trên điện thoại */}
                             <Link
                                 to={link.path}
-                                className={`nav-link-icon d-flex d-xl-none ${isActive ? "active" : ""}`}
+                                className={`nav-link-icon d-flex d-lg-none ${isActive ? "active" : ""}`}
                             >
                                 {link.icon}
                             </Link>
@@ -47,7 +47,7 @@ function Nav() {
                     );
                 })}
             </div>
-        </nav>
+        </div>
     );
 }
 
