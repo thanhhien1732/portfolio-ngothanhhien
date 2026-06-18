@@ -211,7 +211,7 @@ p {
 
 /* Áp dụng cho các màn hình từ tablet/mobile trở xuống (khi thanh nav nằm ở đáy) */
 @media (max-width: 1199px) {
-    main {
+    .main-content {
         /* Chiều cao Nav (70px) + bottom (1rem ~ 16px) + dư ra một chút để thoáng mắt */
         padding-bottom: 120px !important;
     }

@@ -8,7 +8,9 @@ function Layout() {
     <div>
       <AppHeader />
       <Nav />
-      <Outlet />
+      <main className="main-content">
+        <Outlet />
+      </main>
     </div>
   )
 }
