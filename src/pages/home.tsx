@@ -11,6 +11,13 @@ import { fadeIn } from "variants";
 const HomePage = () => {
     const { t } = useTranslation();
 
+    // Hàm xử lý mở CV dành riêng cho nút "Get My CV" ở chế độ mobile
+    const urlCV = "https://drive.google.com/file/d/1JWlMou9Wu1w_NWW_daDTYqSw-Z8yDa5n/view?usp=sharing";
+    const handleDownloadCV = () => {
+        const newWindow = window.open(urlCV, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    }
+
     return (
         <div className="homepage-screen">
             <div style={{
@@ -49,10 +56,12 @@ const HomePage = () => {
                             <HeroRight />
                         </motion.div>
 
+                        {/* Nút "Get My CV" chỉ hiển thị trên mobile */}
                         <Col xs={12} className="d-md-none d-flex mt-4 justify-content-center">
                             <ResizeButton
                                 btnText={t("heroSection.cv")}
                                 btnIcons={<MdFileDownload />}
+                                onClick={handleDownloadCV}
                             />
                         </Col>
                     </Row>
