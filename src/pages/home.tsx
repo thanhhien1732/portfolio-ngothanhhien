@@ -34,19 +34,21 @@ const HomePage = () => {
                             initial="hidden"
                             animate="show"
                             exit="hidden"
-                            className="col-md-6 d-none d-md-block"
+                            className="col-md-6 col-12"
                         >
                             <HeroLeft />
                         </motion.div>
+
                         <motion.div
                             variants={fadeIn("left", 0.35)}
                             initial="hidden"
                             animate="show"
                             exit="hidden"
-                            className="col-md-6"
+                            className="col-md-6 col-12"
                         >
                             <HeroRight />
                         </motion.div>
+
                         <Col xs={12} className="d-md-none d-flex mt-4 justify-content-center">
                             <ResizeButton
                                 btnText={t("heroSection.cv")}
