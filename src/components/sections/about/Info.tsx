@@ -245,8 +245,8 @@ function Info() {
                             key={itemIndex}
                         >
                             {/* title */}
-                            <div className="fw-light mb-2 mb-md-0 fw-normal">{item.title}</div>
-                            <div>{item.icons}</div>
+                            <div className="fw-light mb-md-0 fw-normal">{item.title}</div>
+                            <div className="mb-2">{item.icons}</div>
                         </div>
                     );
                 })}
