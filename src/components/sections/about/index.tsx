@@ -14,7 +14,7 @@ const About = () => {
             <div className="container position-relative pt-xl-6">
                 <div className="d-flex flex-column flex-xl-row gap-5">
 
-                    <div className="flex-grow-1 d-flex flex-column">
+                    <div className="flex-grow-1 d-flex flex-column col-xl-6">
                         {/* text */}
                         <div className="mb-4 mb-xl-4">
                             <Text />
@@ -39,8 +39,8 @@ const About = () => {
                         initial="hidden"
                         animate="show"
                         exit="hidden"
-                        className="d-flex flex-column w-100"
-                        style={{ maxWidth: '48%' }}
+                        // Bỏ style maxWidth 48%, thêm class col-xl-6 để tự động chia cột
+                        className="d-flex flex-column col-xl-6"
                     >
                         <Info />
                     </motion.div>
