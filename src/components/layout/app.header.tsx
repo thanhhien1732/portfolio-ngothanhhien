@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
+// import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import { MdOutlineLightMode, MdNightlight } from "react-icons/md";
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { useCurrentApp } from 'components/context/app.context';
 // import { useTranslation } from 'react-i18next';
 // import { NavDropdown } from 'react-bootstrap';
@@ -43,8 +43,10 @@ function AppHeader() {
                         Thanh Hien
                     </span>
                 </Link>
+
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+
+                {/* <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <NavLink className="nav-link" to="/">Home</NavLink>
                         <NavLink className="nav-link" to="/about">About</NavLink>
@@ -92,7 +94,7 @@ function AppHeader() {
                             </div>
                         </NavDropdown>
                     </Nav> */}
-                </Navbar.Collapse>
+                {/* </Navbar.Collapse> */}
             </Container>
         </Navbar>
     );
