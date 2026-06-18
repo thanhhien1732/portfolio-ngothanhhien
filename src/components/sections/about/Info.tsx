@@ -81,7 +81,7 @@ const aboutData = [
                         {/* desktop */}
                         <div className="d-none d-sm-block">
                             <img
-                                src={"https://skillicons.dev/icons?i=git,github,postman,docker,aws,figma"}
+                                src={"https://skillicons.dev/icons?i=git,github,postman,docker,aws"}
                                 width={0}
                                 height={0}
                                 style={{ width: "100%", height: "100%" }}
@@ -92,7 +92,7 @@ const aboutData = [
                         <div className="d-block d-sm-none">
                             <div className="mx-auto" style={{ height: "30px" }}>
                                 <img
-                                    src={"https://skillicons.dev/icons?i=git,github,postman,docker,aws,figma"}
+                                    src={"https://skillicons.dev/icons?i=git,github,postman,docker,aws"}
                                     width={0}
                                     height={0}
                                     style={{ width: "100%", height: "100%" }}

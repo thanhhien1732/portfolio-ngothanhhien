@@ -9,7 +9,7 @@ import { MdFileDownload } from "react-icons/md";
 
 const HeroLeft = () => {
     const { t } = useTranslation();
-    const urlCV = " ";
+    const urlCV = "https://drive.google.com/file/d/1uMzV9tfz-Vj_naN4zIiCzRv5kz8fuwi5/view?usp=sharing";
 
     const handleDownloadCV = () => {
         const newWindow = window.open(urlCV, '_blank', 'noopener,noreferrer');
