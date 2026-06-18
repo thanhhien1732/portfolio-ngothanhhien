@@ -22,19 +22,10 @@ const aboutData = [
                             />
                         </div>
                         {/* mobile */}
-                        <div className="d-block d-sm-none d-flex flex-column gap-2">
+                        <div className="d-block d-sm-none">
                             <div className="mx-auto" style={{ height: "30px" }}>
                                 <img
-                                    src={"https://skillicons.dev/icons?i=html,css,sass,ts"}
-                                    width={0}
-                                    height={0}
-                                    style={{ width: "100%", height: "100%" }}
-                                    alt="iconsSkillFrontEnd"
-                                />
-                            </div>
-                            <div className="mx-auto" style={{ height: "30px" }}>
-                                <img
-                                    src={"https://skillicons.dev/icons?i=react,bootstrap,tailwind"}
+                                    src={"https://skillicons.dev/icons?i=html,css,sass,ts,react,bootstrap,tailwind"}
                                     width={0}
                                     height={0}
                                     style={{ width: "100%", height: "100%" }}
@@ -60,19 +51,10 @@ const aboutData = [
                             />
                         </div>
                         {/* mobile */}
-                        <div className="d-block d-sm-none d-flex flex-column gap-2">
+                        <div className="d-block d-sm-none">
                             <div className="mx-auto" style={{ height: "30px" }}>
                                 <img
-                                    src={"https://skillicons.dev/icons?i=js,nodejs,express,nestjs"}
-                                    width={0}
-                                    height={0}
-                                    style={{ width: "100%", height: "100%" }}
-                                    alt="iconsSkillBackEnd"
-                                />
-                            </div>
-                            <div className="mx-auto" style={{ height: "30px" }}>
-                                <img
-                                    src={"https://skillicons.dev/icons?i=prisma,mysql,mongodb,python"}
+                                    src={"https://skillicons.dev/icons?i=js,nodejs,express,nestjs,prisma,mysql,mongodb,python"}
                                     width={0}
                                     height={0}
                                     style={{ width: "100%", height: "100%" }}
