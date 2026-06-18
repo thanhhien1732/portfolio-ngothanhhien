@@ -39,7 +39,6 @@ const About = () => {
                         initial="hidden"
                         animate="show"
                         exit="hidden"
-                        // Bỏ style maxWidth 48%, thêm class col-xl-6 để tự động chia cột
                         className="d-flex flex-column col-xl-6"
                     >
                         <Info />

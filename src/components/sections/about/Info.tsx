@@ -60,10 +60,19 @@ const aboutData = [
                             />
                         </div>
                         {/* mobile */}
-                        <div className="d-block d-sm-none">
+                        <div className="d-block d-sm-none d-flex flex-column gap-2">
                             <div className="mx-auto" style={{ height: "30px" }}>
                                 <img
-                                    src={"https://skillicons.dev/icons?i=js,nodejs,express,nestjs,prisma,mysql,mongodb,python"}
+                                    src={"https://skillicons.dev/icons?i=js,nodejs,express,nestjs"}
+                                    width={0}
+                                    height={0}
+                                    style={{ width: "100%", height: "100%" }}
+                                    alt="iconsSkillBackEnd"
+                                />
+                            </div>
+                            <div className="mx-auto" style={{ height: "30px" }}>
+                                <img
+                                    src={"https://skillicons.dev/icons?i=prisma,mysql,mongodb,python"}
                                     width={0}
                                     height={0}
                                     style={{ width: "100%", height: "100%" }}
