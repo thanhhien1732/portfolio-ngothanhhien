@@ -12,7 +12,7 @@ const HomePage = () => {
     // const { t } = useTranslation();
 
     // Hàm xử lý mở CV dành riêng cho nút "Get My CV" ở chế độ mobile
-    const urlCV = "https://drive.google.com/file/d/1JWlMou9Wu1w_NWW_daDTYqSw-Z8yDa5n/view?usp=sharing";
+    const urlCV = "https://drive.google.com/file/d/1tl_awaTScVRNniVixAnErR5_SZ55zco0/view?usp=sharing";
     const handleDownloadCV = () => {
         const newWindow = window.open(urlCV, '_blank', 'noopener,noreferrer');
         if (newWindow) newWindow.opener = null;
